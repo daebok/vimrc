@@ -1,4 +1,10 @@
 #/bin/sh
-echo "hello world"
+vimrc="$HOME/.vimrc"
+backup_vimrc="$HOME/.vimrc_backup"
 
-ln -s `pwd`/vimrc ~/.vimrc.local
+if [ -e $vimrc ]; then
+  echo "backup as $backup_vimrc and create sybolic link $vimrc "
+  mv $vimrc $backup_vimrc 
+fi
+
+ln -s `pwd`/.vimrc $vimrc
