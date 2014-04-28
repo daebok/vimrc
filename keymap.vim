@@ -36,8 +36,8 @@ map <Leader>T :vertical resize 200<CR>
 map <Leader>t :vertical resize 1<CR>
 map <Leader>k :resize -6<CR>
 map <Leader>j :resize +6<CR>
-map <Leader>l :vertical resize -6<CR>
-map <Leader>h :vertical resize +6<CR>
+map <Leader>h :vertical resize -6<CR>
+map <Leader>l :vertical resize +6<CR>
 map <Leader>K :resize -1<CR>
 map <Leader>J :resize +1<CR>
 map <Leader>H :vertical resize -1<CR>   
