@@ -8,7 +8,7 @@ let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
 " NERDTree ********************************************************************
-:noremap <Leader>t :NERDTreeToggle<CR>
+":noremap <Leader>t :NERDTreeToggle<CR>
 let NERDTreeHijackNetrw=1 " User instead of Netrw when doing an edit /foobar
 let NERDTreeMouseMode=1 " Single click for everything
 
@@ -19,7 +19,7 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
 " Toggle commenting on 1 line or all selected lines. Wether to comment or not
 " is decided based on the first line; if it's not commented then all lines
 " will be commented
-:map <Leader>c :call NERDComment(0, "toggle")<CR> 
+":map <Leader>c :call NERDComment(0, "toggle")<CR> 
 
 
 " SnippetsEmu *****************************************************************
@@ -42,7 +42,7 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
 " fuzzyfinder ********************************************************
 " I'm using CommandT for main searching, but it doesn't do buffers, so I'm
 " using FuzzyFinder for that
-map <Leader>b :FufBuffer<CR>
+" map <Leader>b :FufBuffer<CR>
 "let g:fuzzy_ignore = '.o;.obj;.bak;.exe;.pyc;.pyo;.DS_Store;.db'
 
 

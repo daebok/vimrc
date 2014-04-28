@@ -66,9 +66,9 @@ imap hh =>
 imap aa @
 
 if version >= 700
-  map <C-t> <Esc>:tabnew<CR>
-  map <C-F4> <Esc>:tabclose<CR>
-  map <C-S-tab> :tabprevious<CR>
-  map <C-tab> :tabnext<CR>
-  map <C-w> <Esc>:tabclose<CR>
+map <C-t> <Esc>:tabnew<CR>
+map <C-F4> <Esc>:tabclose<CR>
+map <C-S-tab> :tabprevious<CR>
+map <C-tab> :tabnext<CR>
+"map <C-w> <Esc>:tabclose<CR>
 endif
