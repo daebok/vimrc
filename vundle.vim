@@ -14,6 +14,7 @@ Plugin 'Trinity'
 Plugin 'The-NERD-tree'
 Plugin 'surround.vim'
 Plugin 'molokai'
+Plugin 'solarized'
 
 "Plugin 'NERD_tree-Project'
 "Plugin 'minibufexpl.vim'

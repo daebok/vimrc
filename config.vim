@@ -4,7 +4,6 @@
   " let $VIMRUNTIME="C:/Vim/vim74"
 " endif
 "
-set imd
 
 " Tabs ************************************************************************
 "set sta " a <Tab> in an indent inserts 'shiftwidth' spaces
@@ -66,6 +65,9 @@ set smartcase " Ignore case when searching lowercase
 "set t_Co=256 " 256 colors
 "set background=dark 
 syntax on " syntax highlighting
+set background=dark
+"colorscheme solarized
+colorscheme molokai
 
 
 " Status Line *****************************************************************
