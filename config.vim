@@ -29,10 +29,13 @@ endfunction
 
 call Tabstyle_spaces()
 
+set nocompatible              " be iMproved, required
+filetype on                   " workaround a bug in mac
+filetype off                  " required
 
 " Indenting *******************************************************************
-set ai " Automatically set the indent of a new line (local to buffer)
-set si " smartindent (local to buffer)
+set autoindent " Automatically set the indent of a new line (local to buffer)
+set smartindent " smartindent (local to buffer)
 
 
 " Scrollbars ******************************************************************
@@ -171,3 +174,38 @@ endif
 
 "set statusline=FILE_NAME:%1*[%f(%Y)]%*\ ENCODING:%1*[%{&enc}]%*\ LINE_NUM:%1*[%l/%L]%*\ LOCATION:%1*[%p%%]%*\ VAULE_BYTE:%1*[%b]%*\ %h%m%r%=%-14.(%l,%c%V%)]\ %P
 set laststatus=2
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+"ettings {{{
+"" makefile
+au BufNewFile,BufReadPost Makefile* set noet
+au BufNewFile,BufReadPost makefile* set noet
+au BufNewFile,BufReadPost *.mk set noet
+
+" actionscript
+au BufNewFile,BufReadPost *.as set filetype=actionscript
+au BufNewFile,BufReadPost *.mxml set filetype=mxml
+
+" diff
+au BufNewFile,BufReadPost diff.log set filetype=diff
+
+" tex
+au BufNewFile,BufReadPost *.tex set et fileencoding=utf-8
+
+" json
+au BufNewFile,BufReadPost *.json set filetype=javascript
+
+" ejs
+au BufNewFile,BufReadPost *.ejs set filetype=html
+
+" coffeescript
+au BufNewFile,BufReadPost *.coffee set et filetype=coffeescript
+
+" python
+au BufNewFile,BufReadPost *.py set et filetype=python
+
+" typescript
+au BufNewFile,BufReadPost *.ts set filetype=typescript
+" }}}

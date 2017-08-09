@@ -1,5 +1,4 @@
 let mapleader = "t"
-imap jj <Esc> " Professor VIM says '88% of users prefer jj over esc', jj abrams disagrees
 
 map <Leader>I :set noic<CR>
 map <Leader>i :set ic<CR>
@@ -15,14 +14,6 @@ map <Leader>v :vs<CR>
 map <Leader>r :TlistToggle<CR>
 map <Leader>d :%s/\s*/<CR>
 map <Leader>D :%s/\r//g''t/<CR>
-map <Leader>/ :noh<CR>
-map <Leader>n :set nu<CR>
-map <Leader>N :set nonu<CR>
-map <Leader>I :set noic<CR>
-map <Leader>i :set ic<CR>
-map <Leader>q :q!<CR>
-map <Leader>z :wq<CR>
-map <Leader>w :w<CR>
 map <Leader>b :%!xxd -g1 -u<CR>
 map <Leader>B :%!xxd -r<CR>
 map <Leader>C :s/\/\//:noh:w<CR>
@@ -43,6 +34,13 @@ map <Leader>J :resize +1<CR>
 map <Leader>H :vertical resize -1<CR>   
 map <Leader>L :vertical resize +1<CR>
 
+"map <Leader>p <C-^> " Go to previous file
+nnoremap <C-H> :bp<CR>
+nnoremap <C-L> :bn<CR>
+nnoremap <C-N> :cn<CR>
+nnoremap <C-P> :cp<CR>
+nnoremap c :bp\|bd #<CR>
+
 " Insert New Line *************************************************************
 map <S-Enter> O<ESC> " awesome, inserts new line without going into insert mode
 map <Enter> o<ESC>
@@ -58,9 +56,8 @@ map j gj
 imap <down> <C-o>gj
 map E ge
 
-map <Leader>p <C-^> " Go to previous file
-
 " Hard to type *****************************************************************
+imap jj <Esc> " Professor VIM says '88% of users prefer jj over esc', jj abrams disagrees
 imap uu _
 imap hh =>
 imap aa @
@@ -72,3 +69,6 @@ map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>
 "map <C-w> <Esc>:tabclose<CR>
 endif
+
+" keymap for plugins
+:noremap <Leader>e :NERDTreeToggle<CR>

@@ -26,10 +26,10 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
 
 
 " CommandT ********************************************************
-  " To compile:
-  " cd ~/cl/etc/vim/ruby/command-t
-  " ruby extconf.rb
-  " make
+" To compile:
+" cd ~/cl/etc/vim/ruby/command-t
+" ruby extconf.rb
+" make
 "let g:CommandTMatchWindowAtTop = 1
 "map <Leader>f :CommandT<CR>
 
@@ -58,3 +58,32 @@ let Tlist_Use_Right_Window = 1
 "let Tlist_Auto_Open = 1 
 let Tlist_Exit_OnlyWindow = 1
 
+"vim-airline
+let g:airline_theme='molokai'
+let g:airline#extensions#tabline#enabled=1
+
+
+"set laststatus=2
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+let g:syntastic_enable_signs = 1
+let g:syntastic_auto_loc_list = 1
+
+let g:syntastic_java_checkers = ['checkstyle']  " use checkstyle, even if I have javac installed
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl']
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_coffee_checkers = ['coffeelint']
+let g:syntastic_coffee_coffeelint_args = "--csv --file config.json"
+"use tidy
+let g:syntastic_html_tidy_exec = '/usr/local/bin/tidy'
+
+let g:tagbar_usearrows = 1
