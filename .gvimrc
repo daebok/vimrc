@@ -8,12 +8,12 @@
 "  *****************************************************************
 if has("gui_macvim")
     set fuoptions=maxvert,maxhorz " fullscreen options (MacVim only), resized window when changed to fullscreen
-    set guifont=Bitstream_Vera_Sans_Mono:h12
+    set guifont=CasCadia_Code:h12
     set guioptions-=T  " remove toolbar
     set stal=2 " turn on tabs by default
 
 elseif has("gui_gtk2")
-    set guifont=Bitstream_Vera_Sans_Mono:h12
+    set guifont=CasCadia_Code:h12
     set guioptions-=T  " remove toolbar
 
 elseif has("x11")

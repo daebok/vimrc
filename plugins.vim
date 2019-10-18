@@ -60,6 +60,7 @@ let Tlist_Exit_OnlyWindow = 1
 
 "vim-airline
 let g:airline_theme='molokai'
+let g:airline_layout='powerline'
 let g:airline#extensions#tabline#enabled=1
 
 
