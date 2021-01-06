@@ -178,7 +178,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-"ettings {{{
+"settings {{{
 "" makefile
 au BufNewFile,BufReadPost Makefile* set noet
 au BufNewFile,BufReadPost makefile* set noet
