@@ -22,22 +22,22 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/vim-easy-align'
 Plug 'kien/ctrlp.vim'
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
-Plug 'majutsushi/tagbar'
-Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
-Plug 'morhetz/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'pangloss/vim-javascript'    " JavaScript support
-Plug 'plasticboy/vim-markdown'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-Plug 'scrooloose/nerdcommenter', { 'on': 'NERDTreeToggle' }
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
 Plug 'tomasr/molokai'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'scrooloose/nerdcommenter', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+"Plug 'tpope/vim-fugitive'
+Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plug 'morhetz/gruvbox'
+Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'majutsushi/tagbar'
+Plug 'plasticboy/vim-markdown'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " On-demand loading
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
